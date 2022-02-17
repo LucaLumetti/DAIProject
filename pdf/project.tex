@@ -212,12 +212,6 @@
 
 \begin{frame}
   \frametitle{Extending Lenia}
-  Until now, every cell relied on a global synchronous clock. We can now
-  introduce a local clock to each cell and make the whole CA asynchronous.
-\end{frame}
-
-\begin{frame}
-  \frametitle{Extending Lenia}
   This obliviously gives us more parameters to tune and thus is harder to
   explore the whole parameters space and to find living creatures, but life-forms can
   exibith more complex behaviors such as self-replication, which was never been
@@ -227,6 +221,27 @@
       \includegraphics[width=0.4\textwidth]{./creatures_rgb.jpg}
     \end{center}
   \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Extending Lenia}
+  Until now, every cell relied on a global synchronous clock. We can now
+  introduce a local clock to each cell and make the whole CA asynchronous.\\
+  We can update a cell state with a probability of 50\%. Will the whole system
+  still manage to self-organize and able to generate a living creature?
+\end{frame}
+
+\begin{frame}
+  \frametitle{Extending Lenia}
+  The answer is yes, the system is able to self-organize and some of the
+  life-forms found in the synchronous Lenia can live in the asynchronous too. A
+  drawback is that these life-forms are way more sensitive to noise.
+  \begin{figure}
+    \begin{center}
+      \includegraphics[width=0.4\textwidth]{./creatures_async.jpg}
+    \end{center}
+  \end{figure}
+
 \end{frame}
 
 \end{document}

@@ -125,7 +125,7 @@ class Lenia:
         # for i,h in enumerate(H):
         #     print(f"{i}: {np.asarray(h).shape}")
 
-        async_update = 1*(np.random.rand(*H.shape) < 0.01)
+        async_update = 1*(np.random.rand(*H.shape) < 0.5)
         self.world = np.clip(self.world + H*async_update, 0, 1)
         # self.world[:,:,0] = np.clip(self.world[:,:,0] + H[0], 0, 1)
         # self.world[:,:,1] = np.clip(self.world[:,:,1] + H[1], 0, 1)

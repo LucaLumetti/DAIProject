@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.1.26)  17 FEB 2022 01:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.1.26)  17 FEB 2022 15:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -972,17 +972,25 @@ Package pdftex.def Info: ./creatures.jpg  used on input line 193.
 
 ] [17
 
-] [18
-
 ]
-<./creatures_rgb.jpg, id=521, 511.9125pt x 501.875pt>
+<./creatures_rgb.jpg, id=496, 511.9125pt x 501.875pt>
 File: ./creatures_rgb.jpg Graphic file (type jpg)
 <use ./creatures_rgb.jpg>
-Package pdftex.def Info: ./creatures_rgb.jpg  used on input line 230.
+Package pdftex.def Info: ./creatures_rgb.jpg  used on input line 224.
 (pdftex.def)             Requested size: 136.91603pt x 134.22917pt.
- [19
+ [18
 
- <./creatures_rgb.jpg>]
+ <./creatures_rgb.jpg>] [19
+
+]
+<./creatures_async.jpg, id=549, 372.39125pt x 190.7125pt>
+File: ./creatures_async.jpg Graphic file (type jpg)
+<use ./creatures_async.jpg>
+Package pdftex.def Info: ./creatures_async.jpg  used on input line 245.
+(pdftex.def)             Requested size: 136.91603pt x 70.12018pt.
+ [20
+
+ <./creatures_async.jpg>]
 \tf@nav=\write6
 \openout6 = `project.nav'.
 
@@ -992,15 +1000,16 @@ Package pdftex.def Info: ./creatures_rgb.jpg  used on input line 230.
 \tf@snm=\write8
 \openout8 = `project.snm'.
 
- (./project.aux)
+
+(./project.aux)
 Package rerunfilecheck Info: File `project.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 25201 strings out of 478353
- 505703 string characters out of 5854635
- 760909 words of memory out of 5000000
- 42780 multiletter control sequences out of 15000+600000
+ 25212 strings out of 478353
+ 505914 string characters out of 5854635
+ 760910 words of memory out of 5000000
+ 42788 multiletter control sequences out of 15000+600000
  410841 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,15n,122p,432b,564s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1014,10 +1023,10 @@ dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/ms
 bm10.pfb>
-Output written on project.pdf (19 pages, 690501 bytes).
+Output written on project.pdf (20 pages, 755635 bytes).
 PDF statistics:
- 609 PDF objects out of 1000 (max. 8388607)
- 542 compressed objects within 6 object streams
- 41 named destinations out of 1000 (max. 500000)
- 100 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 637 PDF objects out of 1000 (max. 8388607)
+ 568 compressed objects within 6 object streams
+ 43 named destinations out of 1000 (max. 500000)
+ 105 words of extra memory for PDF output out of 10000 (max. 10000000)
 
