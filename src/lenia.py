@@ -147,13 +147,11 @@ class Lenia:
         R = np.random.randint(5, 20)
         k_mean = np.random.rand()
         k_std = np.random.rand()*0.1
-        # b = [np.random.rand()+0.5]
-        b = 1
+        b = [1]
         c = [0,0]
         g_mean = np.random.rand()
         g_std = np.random.rand()*0.1
-        # T = np.random.randint(1, 10)
-        T = 10
+        T = np.random.randint(5, 15)
         h = 1
         r = 1
         self.params = [LeniaParam(self.size, R, k_mean, k_std, b, c, g_mean, g_std, T, h, r)]

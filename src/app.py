@@ -29,13 +29,13 @@ class App:
         left_frame.pack(side=tk.LEFT, fill=tk.BOTH, expand=False)
 
 
-        kernel_frame = tk.Frame(root, bg="orange")
+        kernel_frame = tk.Frame(root)
         kernel_frame.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
 
-        mid_frame_a = tk.Frame(root, bg="green")
+        mid_frame_a = tk.Frame(root)
         mid_frame_a.pack(side=tk.RIGHT, fill=tk.BOTH, expand=False)
 
-        mid_frame_b = tk.Frame(root, bg="orange")
+        mid_frame_b = tk.Frame(root)
         mid_frame_b.pack(side=tk.RIGHT, fill=tk.BOTH, expand=False)
 
         right_frame = tk.Frame(root)
@@ -159,7 +159,7 @@ class App:
         self.kernel = self.lenia.get_kernel_img().copy()
         kernel_canvas_width = self.kernel_canvas.winfo_width()
         kernel_canvas_height = self.kernel_canvas.winfo_height()
-        self.kernel = self.numpy_to_tk(self.kernel, kernel_canvas_width, kernel_canvas_height)
+        self.kernel = self.numpy_to_tk_kernel(self.kernel, kernel_canvas_width, kernel_canvas_height)
         self.kernel_canvas.create_image(0, 0, image=self.kernel, anchor=tk.NW)
         self.kernel_canvas.update()
 
@@ -195,6 +195,7 @@ class App:
 
         x1, y1, x2, y2 = int(x1), int(y1), int(x2), int(y2)
         print(x1, y1, x2, y2)
+        print(self.scale)
 
         self.lenia.world[:, y1:y2, x1:x2] = 0
 
@@ -222,11 +223,18 @@ class App:
         self.canvas.update()
         self.lenia.reset()
 
-    def numpy_to_tk(self, img, canvas_width, canvas_height):
+    def numpy_to_tk_canvas(self, img, canvas_width, canvas_height):
         scale_x = canvas_width / img.shape[1]
         scale_y = canvas_height / img.shape[0]
         self.scale = min(scale_x, scale_y)
         img = cv2.resize(img, None, fx=self.scale, fy=self.scale, interpolation=cv2.INTER_NEAREST)
+        return ImageTk.PhotoImage(image=Image.fromarray(img))
+
+    def numpy_to_tk_kernel(self, img, canvas_width, canvas_height):
+        scale_x = canvas_width / img.shape[1]
+        scale_y = canvas_height / img.shape[0]
+        self.scale_kernel = min(scale_x, scale_y)
+        img = cv2.resize(img, None, fx=self.scale_kernel, fy=self.scale_kernel, interpolation=cv2.INTER_NEAREST)
         return ImageTk.PhotoImage(image=Image.fromarray(img))
 
     # change the image showed in the canvas
@@ -237,9 +245,10 @@ class App:
 
         self.lenia.step()
         self.img = self.lenia.get_world_img()
+        self.canvas.update()
         canvas_width = self.canvas.winfo_width()
         canvas_height = self.canvas.winfo_height()
-        self.tkimg = self.numpy_to_tk(self.img, canvas_width, canvas_height)
+        self.tkimg = self.numpy_to_tk_canvas(self.img, canvas_width, canvas_height)
         self.canvas.create_image(0, 0, image=self.tkimg, anchor=tk.NW)
         self.canvas.update()
         self.update_params()
