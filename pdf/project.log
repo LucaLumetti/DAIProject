@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.1.26)  17 FEB 2022 15:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.1.26)  21 FEB 2022 00:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -917,19 +917,19 @@ Dictionary: translator-theorem-dictionary, Language: English
 ] [5
 
 ]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 70.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 69.
 
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 70.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 69.
 
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
-ut line 70.
+ut line 69.
 
 (/usr/share/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
@@ -955,7 +955,7 @@ thkerncmss.
 <./orbium.jpg, id=389, 298.11375pt x 320.19624pt>
 File: ./orbium.jpg Graphic file (type jpg)
 <use ./orbium.jpg>
-Package pdftex.def Info: ./orbium.jpg  used on input line 183.
+Package pdftex.def Info: ./orbium.jpg  used on input line 182.
 (pdftex.def)             Requested size: 68.45801pt x 73.52632pt.
  [14
 
@@ -963,7 +963,7 @@ Package pdftex.def Info: ./orbium.jpg  used on input line 183.
 <./creatures.jpg, id=416, 1091.07625pt x 555.07375pt>
 File: ./creatures.jpg Graphic file (type jpg)
 <use ./creatures.jpg>
-Package pdftex.def Info: ./creatures.jpg  used on input line 193.
+Package pdftex.def Info: ./creatures.jpg  used on input line 192.
 (pdftex.def)             Requested size: 205.37926pt x 104.4826pt.
  [15
 
@@ -976,7 +976,7 @@ Package pdftex.def Info: ./creatures.jpg  used on input line 193.
 <./creatures_rgb.jpg, id=496, 511.9125pt x 501.875pt>
 File: ./creatures_rgb.jpg Graphic file (type jpg)
 <use ./creatures_rgb.jpg>
-Package pdftex.def Info: ./creatures_rgb.jpg  used on input line 224.
+Package pdftex.def Info: ./creatures_rgb.jpg  used on input line 223.
 (pdftex.def)             Requested size: 136.91603pt x 134.22917pt.
  [18
 
@@ -986,7 +986,7 @@ Package pdftex.def Info: ./creatures_rgb.jpg  used on input line 224.
 <./creatures_async.jpg, id=549, 372.39125pt x 190.7125pt>
 File: ./creatures_async.jpg Graphic file (type jpg)
 <use ./creatures_async.jpg>
-Package pdftex.def Info: ./creatures_async.jpg  used on input line 245.
+Package pdftex.def Info: ./creatures_async.jpg  used on input line 244.
 (pdftex.def)             Requested size: 136.91603pt x 70.12018pt.
  [20
 
@@ -1008,7 +1008,7 @@ Package rerunfilecheck Info: File `project.out' has not changed.
 Here is how much of TeX's memory you used:
  25212 strings out of 478353
  505914 string characters out of 5854635
- 760910 words of memory out of 5000000
+ 760908 words of memory out of 5000000
  42788 multiletter control sequences out of 15000+600000
  410841 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1023,7 +1023,7 @@ dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/ms
 bm10.pfb>
-Output written on project.pdf (20 pages, 755635 bytes).
+Output written on project.pdf (20 pages, 755554 bytes).
 PDF statistics:
  637 PDF objects out of 1000 (max. 8388607)
  568 compressed objects within 6 object streams
